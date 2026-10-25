@@ -53,16 +53,7 @@ may remain HTTP.
 
 If NPM reports a gateway error, first run `curl -I
 http://192.168.1.106:8088/` on the server. Then test the same address from the
-NPM container or verify that the host firewall accepts the Docker bridge. Since
-your other Proxy Hosts already use this LAN-IP pattern, the same routing should
-work here.
-
-### Shared Docker network alternative
-
-If preferred, attach this service and NPM to the same user-defined Docker
-network and use `sp621e-controller` with port `80` as the Forward Hostname and
-Port. In that arrangement, remove the `ports` section entirely. The LAN-IP
-configuration above deliberately matches the existing setup described here.
+NPM container or verify that the host firewall accepts the Docker bridge. 
 
 ## Plain static hosting
 
@@ -88,10 +79,10 @@ The service worker may require one extra reload after an upgrade. If an old UI
 persists, close the tab and reopen it.
 
 ## Future server-side Bluetooth mode
+TODO:
 
 A later server-controlled version will be a separate architecture: an Ubuntu
-service can use BlueZ (for example through Python `bleak`) and expose an
+service I might use BlueZ (for example through Python `bleak`) and expose an
 authenticated HTTP/WebSocket API to the browser. That service must enforce a
 single BLE command queue, reconnect and state-query behavior, and strict
-network authentication. The protocol files in the workspace are already
-structured for reuse in that backend.
+network authentication. 
