@@ -21,7 +21,7 @@ Good options are:
 
 ## Docker Compose
 
-Copy this directory to the Ubuntu server, then run:
+Copy this directory to the Ubuntu server (say its IP is 192.168.1.106), then run:
 
 ```bash
 cp .env.example .env
