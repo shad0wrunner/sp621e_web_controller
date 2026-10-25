@@ -24,3 +24,5 @@ See `SELF_HOSTING.md` for Ubuntu/Docker and Nginx Proxy Manager deployment. See 
 `protocol/` directory and `docs/protocol-notes.md` for the platform-neutral
 protocol record and evidence labels.
 
+Overview of the UI (note how it is simpler than BanlanX's one... :)
+<img width="767" height="981" alt="image" src="https://github.com/user-attachments/assets/93f32fb7-d4e8-42ac-a8a2-e6298f6085a8" />
